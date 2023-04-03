@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timer {
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+.game-btn {
+    width: 130px;
+    height: 38px;
+    background-color: #dd1f39;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.game-btn:hover{
+    background-color: #cb1931;
+    cursor: pointer;
+}
+
+.game-btn:disabled {
+    background-color: #dd1f386b;
+    cursor: auto; 
+}
+
+#check-result {
+    margin: 0 20px;
+}
+
+.puzzle-container {
+    width: 74%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.puzzle {
+    background: url(./images/puppy_400*400.jpeg);
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+}
+
+.puzzle:active {
+    cursor: grabbing;
+}
+
+.box, .puzzle-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(151, 151, 151);
+}
+
+.block {
+    width: 400px;
+    height: 400px;
+    background-color: #edebec;
+    box-shadow: 0px 0px 14px 3px rgba(94,94,94,0.75);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.active-drop {
+    background-color: rgba(234, 184, 84, 0.539);
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(130, 130, 130, 0.689);
+    display: none;
+}
+
+.modal-block {
+    width: 496px;
+    min-height: 100px;
+    background-color: white;
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 6px;
+    padding-top: 32px;
+    margin: 40px auto;
+
+}
+
+hr {
+    border: 1px solid lightgray;
+}
+
+.modal-block p {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    padding: 23px 30px;
+}
+
+.modal-btn-block {
+    margin: 14px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-btn {
+    width: 64px;
+    height: 38px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#close-btn, #close-second-btn {
+    margin-right: 14px;
+    background-color: #ec233f;
+}
+
+#close-btn:hover {
+    background-color: #e01e38;
+    cursor: pointer;
+}
+
+#close-second-btn {
+    display : none;
+}
+
+#close-second-btn:hover {
+    background-color: #e01e38;
+    cursor: pointer;
+}
+
+#check-btn {
+    background-color: #00b34e;
+}
+
+#check-btn:hover {
+    background-color: #029f46;
+    cursor: pointer;
+}
+
+.active {
+    background-color: green; 
+}
+
+.hover {
+    background-color: rgba(255, 246, 147, 0.661);
+}
+

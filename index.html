@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Puzzle</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="timer"><span class="min">01</span>:<span class="sec">00</span></div>
+        <div class="buttons">
+            <button id="start-game" class="game-btn">Start game!</button>
+            <button id="check-result" class="game-btn" disabled>Check result!</button>
+            <button id="new-game" class="game-btn">New game</button>
+        </div>
+        <div class="puzzle-container">
+            <div class="first-block block">
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+                <div class="puzzle-box"><div class="puzzle"></div></div>
+            </div>
+            <div class="second-block block">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal">
+        <div class="modal-block">
+            <hr>
+            <p class="message">You still...</p>
+            <hr>
+            <div class="modal-btn-block">
+                <button id="close-btn" class="modal-btn">Close</button>
+                <button id="close-second-btn" class="modal-btn">Close</button>
+                <button id="check-btn" class="modal-btn">Check</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="./script copy.js"></script> -->
+</body>
+</html>
